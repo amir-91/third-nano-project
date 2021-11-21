@@ -1,4 +1,4 @@
-# second-nano-project
+# third-nano-project
 
 ## Table of Contents
 
