@@ -28,11 +28,17 @@ app.get('/all', (req, res) => {
 
 
 // Post Route
-const addData = (req, res) => {
-  projectData = req.body
-}
-app.post('/addWeather', addData)
+app.post('/addData', addData);
 
+function addData(req,res){
+
+projectData['date'] = req.body.date;
+projectData['temperature'] = req.body.temperature;
+projectData['feelings'] = req.body.feelings;
+
+res.send(projectData);
+// console.log("The data pushed is "+newData)
+}
 
 
 const port = 3000;
